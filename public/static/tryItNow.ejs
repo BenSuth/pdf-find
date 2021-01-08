@@ -1,0 +1,12 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+    <% if (hasLoggedIn) { %>
+        <a class="a-h3" href="/get_emails">Try it now!</a>
+      <% } else { %>
+        <a class="a-h3" href="<%= loginLink %>">Login to try it now!</a>
+      <% } %>  
+</body>
+</html>

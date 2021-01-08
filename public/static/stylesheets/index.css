@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+form {
+    width: 70%;
+    text-align: left;
+    padding-left: 5%;
+    padding-bottom: 1%;
+}
+
+.end-page {
+    padding-bottom: 35%;
+}
+.filter-collapse {
+    text-align: left;    
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+
+.filter {
+    text-align: left;    
+    padding-left: 7%;
+}
+
+.navbar-padding {
+    padding-bottom: 3%;
+}
+
+.navbar-styles {
+    font-weight: 200;
+    font-size: 150%;
+}
+
+.navbar-logo {
+    font-weight: 200;
+    font-size: 200%;
+}
+h3 {
+    display:inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.a-h3 {
+    display:inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: black;
+    opacity: .5;
+    transition: 0.3s;
+}
+
+.a-h3:hover {
+    opacity: 1;
+    color: black;
+    TEXT-DECORATION: none;
+}
+.welcome-title {
+    font-size: 300%;
+}
+
+.welcome-title-home {
+    font-size: 500%;
+}
+
+.welcome-subtitle {
+    font-size: 150%;
+    padding-bottom: 1%;
+}
+
+.welcome-subtitle-home {
+    font-size: 200%;
+    padding-bottom: 1%;
+}
+
+.button-home {
+    font-weight: 200;
+    font-size: 250%;
+}
+
+.button-home-google {
+    font-size: 131%;
+}
+
+.button-home-google-view {
+    font-size: 175%;
+}
+
+.button-home-padding {
+    padding-bottom: 0.5%;
+}
+
+.button-help-page {
+    padding-bottom: 2%;
+}
+
+.update-button {
+    padding-left: 35%;
+}
+
+.list-emails {
+    margin: 0 auto;
+    text-align: left;
+    width: 40%;
+}
+
+.form-centering {
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 18%;
+    width: 100%;
+}

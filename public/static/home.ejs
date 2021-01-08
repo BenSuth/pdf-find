@@ -1,0 +1,47 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <%- include('./navbar.ejs') %>
+  <h3 class="welcome-title">Welcome to PDFind!</h3><br/>
+  <h3 class="welcome-subtitle-home">An easy way to search, find, and manage <br/> pdf attachments in your inbox!</h3><br/>
+  <% if (!hasLoggedIn) { %>
+    <a class="btn btn-outline-dark" href="/help" role="button">
+      Get Started
+    </a>
+    <a class="btn btn-outline-dark" href="<%= loginLink %>" role="button">
+      <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+      Login with Google
+    </a> <br/>
+    <div class="button-help-page"> </div>
+  <% } else { %>
+    <a class="btn btn-outline-dark" href="/get_emails" role="button">
+      View my PDFs
+    </a>   
+    <a class="btn btn-outline-dark" href="/account_change" role="button">
+      <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+      Change Account
+    </a> <br/>
+    <div class="button-help-page"> </div>
+  <% } %>
+  <h3 class="welcome-title">Having some trouble?</h3><br/>
+  <h3 class="welcome-subtitle-home">
+    Check out the 
+    <a class="a-h3" href="/help"> Help page </a>
+    for more instructions.
+  </h3><br/>
+  <h3 class="welcome-title">Learn More!</h3><br/>
+  <h3 class="welcome-subtitle-home">
+    Check out the 
+    <a class="a-h3" href="/about"> About page </a>
+    for more information on
+    <br/> PDFind, the developer, and the
+    <br/> project development.
+  </h3><br/>
+  <h3 class="welcome-title">Thanks for using PDFind and enjoy!</h3><br/>
+
+  <div class="end-page"> </div>
+</body>
+</html>

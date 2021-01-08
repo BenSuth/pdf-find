@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div class="navbar-padding "> 
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white">
+      <div class="container-fluid">
+        <a class="navbar-brand navbar-logo" href="/">PDFind</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link navbar-styles" aria-current="page" href="/">Home</a>
+            </li>
+            <% if (hasLoggedIn) { %>
+              <li class="nav-item">
+                <a class="nav-link navbar-styles" href="/get_emails">PDFs</a>
+              </li>
+            <% } else { %>
+              <li class="nav-item">
+                <a class="nav-link navbar-styles disabled" href="/get_emails">PDFs</a>
+              </li>
+             <% } %> 
+            <li class="nav-item">
+              <a class="nav-link navbar-styles" href="/Help">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-styles" href="/about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <% if (hasLoggedIn) { %>
+      <div class="navbar-collapse collapse">
+        <ul class="navbar-nav ml-auto">
+          <li>
+            <a class="btn btn-outline-dark navbar-styles" href="/logout" role="button" style="text-align: right;">
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+      <% } %>
+    </nav>
+  </div>
+</nav>
+
+</body>
+</html>

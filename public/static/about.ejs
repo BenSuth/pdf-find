@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <%- include('./navbar.ejs') %>
+  <h3 class="welcome-title ">PDFind</h3><br/>
+  <h3 class="welcome-subtitle">
+    PDFind scans your Gmail inbox, and prints a list of all pdf attachments found.
+    </br> You can filter, sort, and search the list for a certain pdf or a group of pdfs.
+    </br> Once you've found the pdf that you are looking for, 
+    </br> you can click the name to view and download the given attachment!
+  </h3> </br>
+  <div>
+    <a class="btn btn-outline-dark" href="/help" role="button">
+      Get Started
+    </a>
+  </div> </br>
+  <h3 class="welcome-title ">The Developer</h3><br/>
+  <h3 class="welcome-subtitle"> 
+      Hi, I'm Ben Sutherland, a second year computer science student at the Universtiy of Windsor.
+    </br> PDFind was developed to help me manage my online schooling during the Pandemic.
+    </br> A lot of my assignmnets, projects, and exams required me to scan my work and send it to the professor.
+    </br> I found myself, almost daily, scanning pages and sending the pdf's to my email account.
+    </br> It became very difficult for me to manage, find, and group my pdf files without having to 
+    </br> download the files themselves.
+    </br> With that problem in mind, PDFind was born!
+    </br> If you're interested in knowing more, please check out my GitHub or LinkedIn page.
+    </br> Thank you and have a great day!
+    </h3> </br>
+  <div class="button-help-page">
+    <a class="btn btn-outline-dark" href="https://github.com/BenSuth" role="button">
+      <img width="50px" style="margin: 0 auto" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"/>
+    </a>
+    <a class="btn btn-outline-dark" href="https://www.linkedin.com/in/ben-sutherland-959a671a7/" role="button">
+      <img width="50px" style="margin: 0 auto" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"/>
+    </a> </br>
+  </div>
+
+  <h3 class="welcome-title ">The Project Development</h3><br/>
+  <h3 class="welcome-subtitle">
+    PDFind is a web app that utilizes Google's
+    <a class="a-h3" href="https://developers.google.com/identity/protocols/oauth2">Oauth 2.0 </a>  
+    and 
+    <a class="a-h3" href="https://developers.google.com/gmail/api">Gmail API </a> 
+    to access a user's inbox and provide a
+    </br> filterable list of pdf attachments. 
+    </br> The back-end was developed using 
+    <a class="a-h3" href="https://nodejs.org/"> Nodejs </a>
+    and 
+    <a class="a-h3" href="https://expressjs.com/"> Expressjs </a>
+    , check out GitHub to see the
+    </br> source code and list of all dependencies used. 
+    </br>The front-edd was developed using HTML, CSS, and Javascript, 
+    </br>with some help from 
+    <a class="a-h3" href="https://getbootstrap.com/"> Bootstraps </a>
+    and 
+    <a class="a-h3" href="https://ejs.co/"> EJS. </a>
+  </h3> </br>
+  <div class="end-page"></div>
+</body>
+</html>

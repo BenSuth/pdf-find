@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <%- include('./navbar.ejs') %>
+  <h3 class="welcome-title ">Getting Started</h3><br/>
+  <div class="welcome-subtitle">
+    <h3 > Before you can start viewing your pdf attachments, you must login with Google.</h3><br/>
+  </div>
+  <div class="button-help-page">
+    <a class="btn btn-outline-dark" href="<%= loginLink %>" role="button">
+      <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+    Login with Google
+  </a> <br/>
+  </div>
+  <div class="welcome-subtitle">
+    <h3 > After logging in, click View my PDFs, to browse all your pdf attachments, <br/> or click Change Account, to change the gmail account being used.</h3><br/>
+    <a class="a-h3" href="/">Try it now!</a>
+  </div>
+
+  <div class = "button-help-page">
+    <a class="btn btn-outline-dark disabled"  role="button">
+      View my PDFs
+    </a>
+    <a class="btn btn-outline-dark disabled" role="button">
+      <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+      Change Account
+    </a>
+  </div>
+  <h3 class="welcome-title" style="padding-top: 3%;">The PDF List</h3><br/>
+  <div class="welcome-subtitle">
+    <h3> Click on any of the PDF labels in your list, to view and download the pdf.</h3><br/>
+    <%- include('./tryItNow.ejs') %>
+  </div>
+  <div class="button-help-page">
+    <a style="width: 40%" class="btn btn-outline-dark disabled" role="button">
+      example1
+      <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" /> 
+    </a> </br>
+    <a style="width: 40%" class="btn btn-outline-dark disabled" role="button">
+      example2
+      <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" />
+    </a></br>
+    <a style="width: 40%" class="btn btn-outline-dark disabled" role="button">
+      example3
+      <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" />
+    </a>
+  </div>  
+  <div class="welcome-subtitle">
+    <h3> Click on Filter your PDFs to search through your list of your PDF attachments.</h3><br/>
+    <%- include('./tryItNow.ejs') %>
+  </div>
+  <div class="button-help-page">
+    <div> 
+      <div style="display: inline-block;" class ="button-help-page">
+        <a class="btn btn-outline-dark welcome" role="button" data-toggle="collapse" data-target="#query">
+          Filter your PDFs
+        </a>
+      </div>    
+    </div>
+    <div id="query" class="collapse form-centering">
+      <div>
+        <form action="/filter_emails">
+          <div class="form-group row">
+            <label for="pdfName" class="col-sm-2 col-form-label">Name of PDF(s): </label>
+            <div class="col-sm-10">
+              <input type="text" name = "filterString" class="form-control" id="pdfName" placeholder="enter the PDF(s) name">
+            </div>
+          </div>
+          <fieldset class="form-group">
+            <div class="row">
+              <legend name="sortOrder" class="col-form-label col-sm-2 pt-0">Sort By: </legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="order" id="order1" value="option1" checked>
+                  <label class="form-check-label" for="order1">
+                    Date   (ascending)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="order" id="order2" value="option2">
+                  <label class="form-check-label" for="order2">
+                    Date (descending)
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                  <input class="form-check-input" type="radio" name="order" id="order3" value="option3">
+                  <label class="form-check-label" for="order3">
+                    Name (ascending)
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                  <input class="form-check-input" type="radio" name="order" id="order3" value="option4">
+                  <label class="form-check-label" for="order3">
+                    Name (descending)
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          </div>
+          <div class="form-group row filter">
+            <div class="col-sm-10">
+              <button type="submit" class="btn btn-outline-dark">Filter</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>  
+  <div class="welcome-subtitle">
+    <h3> To return to the full PDF list, just click clear filters.</h3><br/>
+    <%- include('./tryItNow.ejs') %>
+  </div>
+  <div class="button-help-page">
+    <a class="btn btn-outline-dark disabled" role="button">
+      Clear Filters
+    </a> </br>
+  </div>  
+  <div class="welcome-subtitle">
+    <h3> Use the update button to get new attachments that may have </br> appeared in your inbox.</h3><br/>
+    <%- include('./tryItNow.ejs') %>
+  </div>
+  <div class="button-help-page">
+    <a class="btn btn-outline-dark disabled" role="button">
+      Update
+    </a> </br>
+  </div> 
+  <h3 class="welcome-title "> Thanks for using PDFind!</h3><br/>
+  <div class="end-page"></div>
+</body>
+</html>
