@@ -17,4 +17,4 @@ npm install
 ```
 npm start
 ```
-  Navigate to `http://localhost:3002`
+- Navigate to `http://localhost:3002`
