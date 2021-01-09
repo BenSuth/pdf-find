@@ -4,7 +4,7 @@ The Back-end is developed using Express.js, Gmail API, Google OAUTH 2.0, and loc
 The front-end is developed using HTML, CSS, Bootstrap, and EJS
 
 # Pre-requisites
-- Install [Node.js](https://nodejs.org/en/) version 8.0.0
+- Install [Node.js](https://nodejs.org/en/)
 
 
 # Getting started
@@ -22,3 +22,27 @@ npm install
 npm start
 ```
 - Navigate to `http://localhost:3002`
+
+
+## Contents
+* [Home Page](#home-page)
+* [Help Page](#help-page)
+* [Usage](#usage)
+* [About Page](#about-page)
+
+## Home Page
+![Screenshot](screenshots/Home-Page.png)
+
+## Help Page
+![Screenshot](screenshots/Help-Page.png)
+
+## Usage
+![Screenshot](screenshots/Google-Authentication-Page.png)
+![Screenshot](screenshots/PDF-List.png)
+![Screenshot](screenshots/Filter-Button.png)
+![Screenshot](screenshots/Filtered-List.png)
+
+## About Page
+![Screenshot](screenshots/About-Page.png)
+
+
